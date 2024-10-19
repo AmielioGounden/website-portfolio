@@ -3,8 +3,8 @@ import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
+// import arrow1 from "../assets/img/arrow1.svg";
+// import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/skillspic.png"
 
 export const Skills = () => {
@@ -38,15 +38,15 @@ export const Skills = () => {
                         <p>I am a skilled and passionate graduate student that is determined to excel in any task given   <br></br> to me and i am always willing to learn new skills and improve myself in the working enviroment</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter1} alt="" />
                                 <h5>Web Development</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
+                                <img src={meter2} alt="" />
                                 <h5>App Development</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
+                                <img src={meter3} alt="" />
                                 <h5>Software Developer</h5>
                             </div>
                             
@@ -55,7 +55,7 @@ export const Skills = () => {
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+        <img className="background-image-left" src={colorSharp} alt="" />
     </section>
   )
 }
