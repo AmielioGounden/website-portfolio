@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/intropic.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
@@ -10,8 +10,10 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const toRotate = [ "Web Developer", "App Developer", "UI/UX Designer" ];
   const period = 2000;
+
+  // Memoize the array to prevent re-creating it on every render
+  const toRotate = useMemo(() => [ "Web Developer", "App Developer", "UI/UX Designer" ], []);
 
   const tick = useCallback(() => {
     let i = loopNum % toRotate.length;
