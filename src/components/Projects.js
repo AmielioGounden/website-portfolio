@@ -3,6 +3,9 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/portfolio-11.jpg";
 import projImg2 from "../assets/img/portfolio-2 (1).jpg";
 import projImg3 from "../assets/img/projectt.png";
+import certImg1 from "../assets/img/DataAnCert (1).jpg";
+import certImg2 from "../assets/img/Cert1c (2).jpg";
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from 'react-on-screen';
 import 'animate.css';
@@ -42,6 +45,20 @@ export const Projects = () => {
     // },
   ];
 
+  const certificates = [
+    {
+      title: "Data Analysis with Python Certificate",
+      description: "This certificate demonstrates proficiency in using Python for data analysis, covering libraries such as Pandas, NumPy, and Matplotlib. It showcases skills in data manipulation, visualization, and statistical analysis to draw meaningful insights.",
+      imgUrl: certImg1,
+    },
+    {
+      title: "Responsive Web Design Certificate",
+      description: "This certificate validates expertise in building responsive websites using HTML, CSS, and Flexbox. It demonstrates the ability to create web pages that adapt seamlessly to different devices and screen sizes for an optimal user experience.",
+      imgUrl: certImg2,
+    },
+
+  ];
+
   return (
     <section className="project" id="projects">
       <Container>
@@ -61,7 +78,7 @@ export const Projects = () => {
                       <Nav.Link eventKey="second">Tab 2</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      <Nav.Link eventKey="third">Certificates</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__bounce" : ""}>
@@ -83,7 +100,18 @@ export const Projects = () => {
                       <p>More projects coming soon...</p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>More projects coming soon...</p>
+                    <Row>
+                        {
+                          certificates.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
