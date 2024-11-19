@@ -417,6 +417,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
+  object-fit: cover; /* Ensures the image fills the container without distortion */
   margin-bottom: 24px;
 }
 .proj-imgbx::before {
