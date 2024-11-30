@@ -4,7 +4,9 @@ import projImg1 from "../assets/img/portfolio-11.jpg";
 import projImg2 from "../assets/img/portfolio-2 (1).jpg";
 import projImg3 from "../assets/img/projectt.png";
 import certImg1 from "../assets/img/DataAnCert (1).jpg";
-import certImg2 from "../assets/img/Cert1c (2).jpg";
+import certImg2 from "../assets/img/Cert1c (1).jpg";
+import certImg3 from "../assets/img/IS.jpg";
+import certImg4 from "../assets/img/QA.jpg";
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from 'react-on-screen';
@@ -55,6 +57,16 @@ export const Projects = () => {
       title: "Responsive Web Design Certificate",
       description: "This certificate validates expertise in building responsive websites using HTML, CSS, and Flexbox. It demonstrates the ability to create web pages that adapt seamlessly to different devices and screen sizes for an optimal user experience.",
       imgUrl: certImg2,
+    },
+    {
+      title: "Information Security Certificate",
+      description: "This certificate helped me to develope practical cybersecurity skills, such as vulnerability assessment, penetration testing, and incident response.",
+      imgUrl: certImg3,
+    },
+    {
+      title: "Quality Assurance Certificate",
+      description: "This certificate helped me to develope practical skills in testing, defect tracking, and quality improvement processes.",
+      imgUrl: certImg4,
     },
 
   ];
