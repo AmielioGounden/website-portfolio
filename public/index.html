@@ -40,4 +40,22 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+<script>
+document.addEventListener('contextmenu', (e) => {
+
+  //disable controle
+e.preventDefault()
+return false
+})
+document.addEventListener('keydown', (e) => {
+if (e.ctrlKey || e.keyCode == 123){
+  e.stopPropagation()
+  e.preventDefault()
+}
+})
+
+</script>
+
+
+
 </html>
