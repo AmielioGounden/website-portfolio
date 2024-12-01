@@ -3,6 +3,9 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/portfolio-11.jpg";
 import projImg2 from "../assets/img/portfolio-2 (1).jpg";
 import projImg3 from "../assets/img/projectt.png";
+import projImg4 from "../assets/img/sudoku.png";
+import projImg5 from "../assets/img/MB.png";
+import projImg6 from "../assets/img/stock.png";
 import certImg1 from "../assets/img/DataAnCert (1).jpg";
 import certImg2 from "../assets/img/Cert1c (1).jpg";
 import certImg3 from "../assets/img/IS.jpg";
@@ -17,7 +20,7 @@ export const Projects = () => {
   const projects = [
     {
       title: "Mobile Application",
-      description: "This app is designed for students seeking a liftclub",
+      description: "This app is designed for students (still being worked on)",
       imgUrl: projImg1,
     },
     {
@@ -30,21 +33,21 @@ export const Projects = () => {
       description: "The LifeLine Triage app assists first responders in quickly assessing and categorizing patients using the SIEVE system, ensuring efficient emergency care. It's a user-friendly tool designed to improve response times in critical situations.",
       imgUrl: projImg3,
     },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg1,
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg2,
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg3,
-    // },
+    {
+      title: "Sudoku Solver",
+      description: "Quickly finds solutions to puzzles of varying difficulty.",
+      imgUrl: projImg4,
+    },
+    {
+      title: "Anonymous Message Board",
+      description: "Protects user identity and encourages open communication",
+      imgUrl: projImg5,
+    },
+    {
+      title: "Stock Checker",
+      description: "A straightforward tool to quickly check real-time stock prices and information that provides up-to-date data on various stocks and indices.",
+      imgUrl: projImg6,
+    },
   ];
 
   const certificates = [
